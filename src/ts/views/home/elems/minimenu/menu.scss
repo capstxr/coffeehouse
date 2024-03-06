@@ -1,0 +1,50 @@
+.coffee__wrapper {
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee__image {
+    height: 222px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.coffee__bottom {
+    height: calc(364px - 222px);
+    width: 100%;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background-color: var(--light-yellow-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+}
+
+.coffee__name {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    color: var(--coffee);
+    text-transform: capitalize;
+}
+
+.coffee__mixture {
+    color: var(--dark-gray-1);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+.coffee__price {
+    color: var(--coffee);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}

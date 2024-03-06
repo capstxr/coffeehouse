@@ -1,6 +1,7 @@
 import Hero from "./elems/hero";
 import Intro from "./elems/intro";
 import Menu from "./elems/minimenu";
+import OrderNow from "./elems/order_now";
 import WhyChooseUs from "./elems/why_us";
 
 const Home = () => {
@@ -13,6 +14,8 @@ const Home = () => {
             <Menu/>
 
             <WhyChooseUs/>
+
+            <OrderNow/>
         </main>
     );
 }

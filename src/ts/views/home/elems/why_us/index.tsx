@@ -5,13 +5,22 @@ const WhyChooseUs = () => {
         icon: string;
         head: string;
         summary: string;
+        id: number;
     }
 
     const WhyCard = (props: CardProps) => {
-        const { icon, head, summary } = props;
+        const { icon, head, summary, id } = props;
+
+        const DELAY = 50 * id;
 
         return (
-            <div className="why__card__wrapper item">
+            <div
+                className="why__card__wrapper item"
+                data-aos="fade-up"
+                data-aos-delay={DELAY}
+                data-aos-duration='250'
+                data-aos-offset='300'
+            >
                 <div className="why__card__top">
                     <img
                         src={`/images/icons/${icon}.png`}
@@ -51,24 +60,28 @@ const WhyChooseUs = () => {
                         icon='beans'
                         head='Supreme Beans'
                         summary='Beans that provide great taste'
+                        id={1}
                     />
 
                     <WhyCard
                         icon='badge'
                         head='High Quality'
                         summary='We provide the highest quality'
+                        id={2}
                     />
 
                     <WhyCard
                         icon='coffee-cup'
-                        head='Supreme Beans'
-                        summary='Beans that provide great taste'
+                        head='Extraordinary'
+                        summary='Coffee like you have never tasted'
+                        id={3}
                     />
 
                     <WhyCard
                         icon='best-price'
-                        head='High Quality'
-                        summary='We provide the highest quality'
+                        head='Affordable Price'
+                        summary='Our coffee prices are easy to afford'
+                        id={4}
                     />
                 </div>
 

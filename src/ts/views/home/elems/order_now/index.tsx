@@ -19,15 +19,29 @@ const OrderNow = () => {
                 className="order__beans"
                 draggable={false}
                 loading='lazy'
+                data-aos='fade-left'
+                data-aos-duration='450'
+                data-aos-easing='ease-in-out'
+                data-aos-offset='250'
             />
             
             <div className="content">
                 <div className="order__left">
-                    <h2 className="section__heading order__head">
+                    <h2
+                        className="section__heading order__head"
+                        data-aos='fade-right'
+                        data-aos-duration='500'
+                        data-aos-offset='50'
+                    >
                         Get a chance to have an Amazing morning
                     </h2>
 
-                    <p className="paragraph">
+                    <p
+                        className="paragraph"
+                        data-aos='fade-right'
+                        data-aos-duration='500'
+                        data-aos-delay='100'
+                    >
                         We are giving you are one time opportunity to experience a better life with coffee.
                     </p>
 
@@ -35,6 +49,9 @@ const OrderNow = () => {
                         href="#"
                         className="btn-1"
                         rel='noreferrer noopener nofollow'
+                        data-aos='fade-right'
+                        data-aos-duration='500'
+                        data-aos-delay='200'
                     >
                         Order Now
                     </a>
@@ -47,6 +64,9 @@ const OrderNow = () => {
                         className="order-cup"
                         loading='lazy'
                         draggable={false}
+                        data-aos='zoom-in'
+                        data-aos-delay='50'
+                        data-aos-easing='ease'
                     />
                 </div>
             </div>

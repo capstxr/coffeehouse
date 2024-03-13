@@ -38,7 +38,7 @@ const Footer = () => {
 
                         <div className="footer__social__grid">
                             <a
-                                href=""
+                                href="https://www.facebook.com/"
                                 className="f__social__item"
                                 rel='noreferrer noopener nofollow'
                                 target='_blank'
@@ -51,7 +51,7 @@ const Footer = () => {
                             </a>
 
                             <a
-                                href=""
+                                href="https://www.instagram.com/"
                                 className="f__social__item"
                                 rel='noreferrer noopener nofollow'
                                 target='_blank'
@@ -64,7 +64,7 @@ const Footer = () => {
                             </a>
 
                             <a
-                                href=""
+                                href="https://www.youtube.com/"
                                 className="f__social__item"
                                 rel='noreferrer noopener nofollow'
                                 target='_blank'
@@ -77,7 +77,7 @@ const Footer = () => {
                             </a>
 
                             <a
-                                href=""
+                                href="https://twitter.com/home"
                                 className="f__social__item"
                                 rel='noreferrer noopener nofollow'
                                 target='_blank'

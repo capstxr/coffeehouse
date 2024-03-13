@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 
 import Home from './views/home';
 
+import Header from './components/header';
 import Footer from './components/footer';
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
 
     return (
         <>
+            <Header/>
+            
             <Home/>
 
             <Footer/>

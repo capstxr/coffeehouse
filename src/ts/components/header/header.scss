@@ -1,0 +1,55 @@
+#header {
+    height: 82px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background: transparent;
+    transition: 0.15s;
+}
+
+#header.background {
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(1px);
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__logo {
+    font-size: 35px !important;
+    letter-spacing: 0.5px !important; 
+    font-weight: 400 !important;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.35px;
+    font-weight: 500;
+}
+
+.sign__up__btn {
+    background-color: var(--yellow-1);
+    padding: 14px 27px;
+    border-radius: 24px;
+    color: var(--coffee);
+    transition: 0.1s;
+
+    &:hover {
+        color: var(--yellow-1);
+        background-color: var(--coffee);
+    }
+}

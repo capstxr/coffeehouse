@@ -1,0 +1,118 @@
+.review__grid {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    place-items: center;
+    margin-top: 45px;
+    padding-bottom: 80px;
+}
+
+.review__wrapper {
+    width: calc(100% - 82px);
+    position: relative;
+    border: 1px solid rgba(249, 192, 106, 0.42);
+    background-color: var(--light-yellow-1);
+    height: 524px;
+    overflow: visible;
+}
+
+.review__btn {
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 29px;
+    border: none;
+    outline: none;
+    background-color: var(--yellow-1);
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+.review__btn__arrow {
+    width: 16px;
+    height: 16px;
+}
+
+.review__btn.left {
+    left: -41px;
+}
+
+.review__btn.right {
+    right: -41px;
+
+    .review__btn__arrow {
+        transform: rotate(180deg);
+    }
+}
+
+.review__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review__top {
+    width: 100%;
+    padding: 54px 54px 0;
+}
+
+.review__quote {
+    color: var(--coffee);
+    font-size: 220px;
+    font-weight: 800;
+    line-height: 120px;
+}
+
+.review__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 100px;
+    position: relative;
+}
+
+.review__text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray-1);
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 2;
+}
+
+.review__name {
+    margin-top: 28px;
+    font-size: 32px;
+    color: var(--coffee);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.job__title {
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: var(--gray-1);
+}
+
+.customer__image {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    bottom: -130px;
+}

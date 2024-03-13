@@ -39,7 +39,7 @@ const Header = () => {
                     </a>
 
                     <a
-                        href="#"
+                        href="#menu"
                         className='nav__link'
                         rel='noreferrer noopener nofollow'
                     >
@@ -47,7 +47,7 @@ const Header = () => {
                     </a>
 
                     <a
-                        href="#"
+                        href="#why__us"
                         className='nav__link'
                         rel='noreferrer noopener nofollow'
                     >
@@ -55,7 +55,7 @@ const Header = () => {
                     </a>
 
                     <a
-                        href="#"
+                        href="#newsletter"
                         className='nav__link'
                         rel='noreferrer noopener nofollow'
                     >

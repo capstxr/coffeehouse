@@ -46,6 +46,13 @@ const WhyChooseUs = () => {
 
     return (
         <section id="why__us" className="wrapper">
+            <img
+                src="/images/splashes/coffee_blast.png"
+                alt="Coffee Splash"
+                className="splash splash__right splash__down"
+                draggable={false}
+            />
+
             <div className="content">
                 <h2
                     className="section__heading text__center"

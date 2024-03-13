@@ -8,13 +8,19 @@ import 'aos/dist/aos.css';
 
 import Home from './views/home';
 
+import Footer from './components/footer';
+
 function App() {
     useEffect(() => {
         AOS.init();
     }, [])
 
     return (
-        <Home/>
+        <>
+            <Home/>
+
+            <Footer/>
+        </>
     );
 }
 

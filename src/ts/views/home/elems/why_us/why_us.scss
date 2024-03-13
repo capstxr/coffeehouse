@@ -1,3 +1,7 @@
+#why__us {
+    position: relative;
+}
+
 .why__card__wrapper {
     height: 284px;
     border: 1px solid rgba(249, 192, 106, 0.42);
@@ -57,4 +61,9 @@
     .section__heading {
         margin-bottom: 24px;
     }
+}
+
+.splash__right.splash__down {
+    transform: scale(1, 1) !important;
+    top: -25%;
 }

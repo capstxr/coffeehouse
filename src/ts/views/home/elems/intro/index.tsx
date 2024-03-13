@@ -3,6 +3,13 @@ import './intro.scss';
 const Intro = () => {
     return (
         <section id="intro" className="wrapper">
+            <img
+                src="/images/splashes/coffee_blast.png"
+                alt="Coffee Splash"
+                className="splash splash__left splash__down"
+                draggable={false}
+            />
+
             <div className="content">
                 <div className="intro__left">
                     <h2

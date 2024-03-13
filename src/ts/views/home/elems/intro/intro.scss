@@ -1,5 +1,6 @@
 #intro {
     padding: 34px 0;
+    position: relative;
 
     .content {
         display: flex;
@@ -22,4 +23,8 @@
 
 .intro__text {
     width: 585px;
+}
+
+.splash__left {
+    bottom: -120px !important;
 }

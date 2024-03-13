@@ -1,3 +1,7 @@
+#reviews {
+    position: relative;
+}
+
 .review__grid {
     width: 100%;
     overflow: hidden;
@@ -115,4 +119,8 @@
     object-position: center;
     position: absolute;
     bottom: -130px;
+}
+
+#review__bottom {
+    bottom: -50px !important;
 }

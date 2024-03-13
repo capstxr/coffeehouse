@@ -23,7 +23,12 @@ const Reviews = () => {
         }
 
         return (
-            <div className="review__wrapper">
+            <div
+                className="review__wrapper"
+                data-aos='fade-up'
+                data-aos-duration='500'
+                data-aos-delay='100'
+            >
                 <button
                     className="review__btn left"
                     onClick={handlePrev}
@@ -70,6 +75,7 @@ const Reviews = () => {
                             src={`/images/customers/${picture}.png`}
                             alt="Customer"
                             className="customer__image"
+                            draggable={false}
                         />
                     </div>
                 </div>
@@ -79,12 +85,37 @@ const Reviews = () => {
 
     return (
         <section id="reviews" className="wrapper">
+            <img
+                src="/images/splashes/coffee_blast.png"
+                alt="Coffee splash"
+                className="splash splash__right"
+                draggable={false}
+            />
+
+            <img
+                src="/images/splashes/coffee_blast.png"
+                alt="Coffee splash"
+                className="splash splash__left splash__up"
+                id='review__bottom'
+                draggable={false}
+            />
+
             <div className="content">
-                <h2 className="section__heading text__center">
+                <h2
+                    className="section__heading text__center"
+                    data-aos='fade-up'
+                    data-aos-duration='500'
+                    data-aos-offset='50'
+                >
                     Our coffee perfection feedback
                 </h2>
 
-                <p className="paragraph text__center m-t-16">
+                <p
+                    className="paragraph text__center m-t-16"
+                    data-aos='fade-up'
+                    data-aos-duration='500'
+                    data-aos-delay='100'
+                >
                     Read what our customers have to say about us
                 </p>
 

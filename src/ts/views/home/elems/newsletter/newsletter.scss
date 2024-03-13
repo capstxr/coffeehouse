@@ -1,0 +1,117 @@
+#newsletter {
+    height: 374px;
+    position: relative;
+
+    .section__heading {
+        color: #fff;
+        width: max-content;
+        text-align: center;
+    }
+
+    .paragraph {
+        color: #fff;
+    }
+
+    .content {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.newsletter__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.newsletter__bg__overlay {
+    background-color: var(--coffee);
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.newsletter__input__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    width: 642px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.newsletter__left {
+    padding: 16px 26px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+}
+
+.newsletter__input {
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    width: 100%;
+
+    &::placeholder {
+        font-size: 20px;
+        color: #000;
+        opacity: 0.34;
+    }
+}
+
+.newsletter__btn {
+    height: 100%;
+    padding: 19px 24px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--yellow-1);
+    color: var(--coffee);
+    font-size: 22px;
+    letter-spacing: 0.25px;
+    font-weight: 550;
+    border-radius: 4px;
+    transition: 0.1s;
+
+    &:hover {
+        color: var(--yellow-1);
+        background-color: var(--coffee);
+    }
+}
+
+.coffee__mug {
+    position: absolute;
+    z-index: 1;
+    height: 358px;
+    bottom: -50%;
+}
+
+.coffee__mug__right {
+    right: 0;
+}
+
+.coffee__mug__left {
+    right: auto;
+    left: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

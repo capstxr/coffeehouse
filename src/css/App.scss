@@ -67,6 +67,8 @@ main {
     background-color: var(--yellow-1);
     text-align: center;
     box-shadow: 0px 6px 12px rgba(249, 192, 106, 0.22);
+    outline: none;
+    border: none;
 
     &:hover {
         color: var(--yellow-1);
@@ -105,4 +107,28 @@ main {
     .item {
         width: 280px;
     }
+}
+
+// Coffee splashes
+
+.splash__down {
+    transform: scale(-1, 1) !important;
+}
+
+.splash {
+    width: 520px;
+    position: absolute;
+    z-index: 3;
+    image-rendering: optimizeQuality;
+}
+
+.splash__right {
+    right: 0;
+    top: 60px;
+}
+
+.splash__left {
+    left: 0;
+    bottom: -60px;
+    transform: scale(-1, -1);
 }

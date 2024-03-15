@@ -6,7 +6,7 @@ import './header.scss';
 
 const Header = () => {
     const [ hasBg, setHasBg ] = useState<string>('');
-    const [ isOpen, setIsOpen ] = useState<boolean>(false);
+    const [ isOpen, setIsOpen ] = useState<boolean>(true);
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 75) {

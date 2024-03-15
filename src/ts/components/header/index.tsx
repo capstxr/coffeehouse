@@ -22,7 +22,7 @@ const Header = () => {
 
     useEffect(() => {
         document.body.classList.toggle('is-open');
-    }, [!isOpen]);
+    }, [isOpen]);
 
     return (
         <header

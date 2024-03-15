@@ -30,3 +30,26 @@
     font-weight: 400;
     margin-bottom: 40px;
 }
+
+@media screen and (max-width: 450px) {
+    .hero__head {
+        font-size: 100px;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    }
+
+    .hero__label {
+        font-size: 20px;
+        width: 100%;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    }
+
+    .hero__text {
+        width: 100%;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    }
+
+    .hero__background {
+        object-position: 20% center;
+    }
+}

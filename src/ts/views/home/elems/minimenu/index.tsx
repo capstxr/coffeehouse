@@ -6,21 +6,14 @@ const Menu = () => {
         coffee: number;
         milk: number;
         price: string;
-        id: number;
     }
 
     const Coffee = (props: CoffeeProps) => {
-        const { name, coffee, milk, price, id } = props;
-
-        const DELAY = 150 * id;
+        const { name, coffee, milk, price } = props;
 
         return (
             <div
                 className="item coffee__wrapper"
-                data-aos="fade-up"
-                data-aos-delay={DELAY}
-                data-aos-duration='300'
-                data-aos-offset='250'
             >
                 <img
                     src={`/images/coffee/${name}.png`}
@@ -52,18 +45,12 @@ const Menu = () => {
             <div className="content">
                 <h2
                     className="section__heading text__center"
-                    data-aos='fade-up'
-                    data-aos-duration='500'
-                    data-aos-offset='50'
                 >
                     Enjoy a new blend of coffee style
                 </h2>
 
                 <p
                     className="text__center paragraph m-t-16"
-                    data-aos='fade-up'
-                    data-aos-duration='500'
-                    data-aos-delay='100'
                 >
                     Explore all flavours of coffee with us. There is always a new cup worth experiencing
                 </p>
@@ -74,7 +61,6 @@ const Menu = () => {
                         coffee={50}
                         milk={50}
                         price='8.50'
-                        id={3}
                     />
 
                     <Coffee
@@ -82,7 +68,6 @@ const Menu = () => {
                         coffee={50}
                         milk={50}
                         price='8.50'
-                        id={2}
                     />
 
                     <Coffee
@@ -90,7 +75,6 @@ const Menu = () => {
                         coffee={50}
                         milk={50}
                         price='8.50'
-                        id={1}
                     />
 
                     <Coffee
@@ -98,7 +82,6 @@ const Menu = () => {
                         coffee={50}
                         milk={50}
                         price='8.50'
-                        id={0}
                     />
                 </div>
             </div>

@@ -56,3 +56,43 @@
         width: 425px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    #order__now {
+        height: max-content;
+
+        .content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .order__beans {
+        height: auto;
+        width: 50%;
+    }
+
+    .order__left {
+        width: 100%;
+        margin-bottom: 80px;
+
+        .paragraph {
+            width: 100%;
+            text-align: start;
+        }
+    }
+
+    .order__head {
+        text-align: start;
+        font-size: 30px;
+    }
+
+    .order__cup {
+        position: absolute;
+        height: 150px;
+        width: auto;
+        bottom: 30px;
+        right: 20px;
+    }
+}

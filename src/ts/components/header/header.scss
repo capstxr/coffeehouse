@@ -4,7 +4,7 @@
     z-index: 999;
     top: 0;
     background: transparent;
-    transition: 0.15s;
+    transition: 0.5s;
 }
 
 #header.background {
@@ -51,5 +51,102 @@
     &:hover {
         color: var(--yellow-1);
         background-color: var(--coffee);
+    }
+}
+
+#mobile__nav {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    #nav {
+        display: none;
+    }
+
+    #mobile__nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__logo {
+        font-size: 30px !important;
+    }
+
+    .nav__list {
+        gap: 6px;
+    }
+
+    .sign__up__btn {
+        padding: 7px 14px;
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+        width: 28px;
+        height: 28px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .mobile__nav__content {
+        display: flex;
+        position: absolute;
+        width: 280px;
+        right: -100vw;
+        transition: 0.5s;
+        background-color: rgba(0,0,0,0.4);
+        backdrop-filter: blur(1px);
+        top: 82px;
+        height: 100vh;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+
+        .nav__list {
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+            align-items: flex-start;
+            width: 100%;
+            gap: 42px;
+        }
+
+        .nav__list:first-of-type {
+            margin-top: -82px;
+        }
+
+        .nav__link {
+            font-size: 18px;
+        }
+
+        .sign__up__btn {
+            padding: 12px 30px;
+        }
+    }
+
+    #header.open {
+        background-color: #000;
+        backdrop-filter: blur(1px);
+
+        .mobile__nav__content {
+            right: 0;
+            background-color: #000;
+        }
+    }
+
+    body.is-open {
+        overflow-y: hidden;
     }
 }

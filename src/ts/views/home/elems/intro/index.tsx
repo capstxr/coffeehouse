@@ -22,9 +22,6 @@ const Intro = () => {
 
                     <p
                         className="paragraph intro__text"
-                        data-aos='fade-up'
-                        data-aos-duration='400'
-                        data-aos-delay='200'
                     >
                         Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and helps build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is no doubt that you will enjoy this coffee more than others you have ever tasted.
                     </p>
@@ -33,10 +30,6 @@ const Intro = () => {
                         href="#"
                         rel='noreferrer noopener nofollow'
                         className='btn-1'
-                        data-aos='fade-up'
-                        data-aos-duration='400'
-                        data-aos-delay='400'
-                        data-aos-offset='-50'
                     >
                         Learn More
                     </a>
@@ -46,12 +39,9 @@ const Intro = () => {
                     <img
                         src="/images/beans/coffee_of_beans.png"
                         alt="Coffee Mug"
-                        className="intro_coffee"
+                        className="intro__coffee"
                         loading='lazy'
                         draggable={false}
-                        data-aos='fade-down-left'
-                        data-aos-duration='400'
-                        data-aos-easing='ease-in-out'
                     />
                 </div>
             </div>

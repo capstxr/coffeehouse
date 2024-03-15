@@ -28,3 +28,33 @@
 .splash__left {
     bottom: -120px !important;
 }
+
+@media screen and (max-width: 450px) {
+    #intro {
+        padding: 0;
+
+        .content {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    
+    .intro__left, .intro__right {
+        width: 100%;
+    }
+
+    .intro__text {
+        width: 100%;
+        line-height: 1.7;
+    }
+
+    .intro__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro__coffee {
+        width: 100%;
+    }
+}

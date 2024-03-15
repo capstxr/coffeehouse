@@ -124,3 +124,78 @@
 #review__bottom {
     bottom: -50px !important;
 }
+
+@media screen and (max-width: 450px) {
+    .review__wrapper {
+        width: 100%;
+        height: max-content;
+    }
+
+    .review__top {
+        padding: 12px 12px 0;
+    }
+
+    .review__quote {
+        font-size: 80px;
+        line-height: 52px;
+    }
+
+    .review__bottom {
+        padding: 0 12px;
+    }
+
+    .review__text {
+        font-size: 14px;
+        line-height: 1.7;
+        font-weight: 800;
+        letter-spacing: normal;
+    }
+
+    .review__name {
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
+    .job__title {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    .customer__image {
+        width: 94px;
+        height: 94px;
+        bottom: -22%;
+    }
+
+    .review__btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 16px;
+    }
+
+    .review__btn__arrow {
+        height: 12px;
+        width: 12px;
+    }
+
+    .review__btn.left {
+        left: 24px;
+        bottom: 24px;
+        top: auto;
+        right: auto;
+    }
+
+    .review__btn.right {
+        right: 24px;
+        bottom: 24px;
+        top: auto;
+        left: auto;
+    }
+}

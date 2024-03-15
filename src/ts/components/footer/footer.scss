@@ -113,3 +113,41 @@
         text-decoration: underline;
     }
 }
+
+@media screen and (max-width: 450px) {
+    #footer {
+        width: 100%;
+        overflow: hidden;
+        height: inherit;
+
+        .content {
+            position: relative;
+            padding: 32px 0;
+        }
+    }
+
+    .footer__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer__item {
+        gap: 12px;
+    }
+
+    .footer__nav {
+        margin-top: 10px;
+    }
+
+    .f__intro__text {
+        width: 100%;
+    }
+
+    .footer__background__img {
+        height: 70%;
+        bottom: 0;
+    }
+}

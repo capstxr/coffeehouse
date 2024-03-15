@@ -115,3 +115,42 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+@media screen and (max-width: 450px) {
+    .coffee__mug {
+        display: none;
+    }
+
+    #newsletter {
+
+        .content {
+
+        }
+
+        .section__heading {
+            width: 100%;
+        }
+    }
+
+    .newsletter__input__container {
+        width: 100%;
+        height: 50px;
+    }
+
+    .newsletter__left {
+        padding: 5px 10px;
+    }
+
+    .newsletter__input {
+        font-size: 16px;
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+
+    .newsletter__btn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}

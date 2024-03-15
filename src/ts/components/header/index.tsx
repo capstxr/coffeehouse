@@ -6,7 +6,7 @@ import './header.scss';
 
 const Header = () => {
     const [ hasBg, setHasBg ] = useState<string>('');
-    const [ isOpen, setIsOpen ] = useState<boolean>(true);
+    const [ isOpen, setIsOpen ] = useState<boolean>(false);
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 75) {
@@ -22,7 +22,7 @@ const Header = () => {
 
     useEffect(() => {
         document.body.classList.toggle('is-open');
-    }, [isOpen]);
+    }, [!isOpen]);
 
     return (
         <header

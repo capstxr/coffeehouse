@@ -11,14 +11,37 @@ const Reviews = () => {
         picture: string;
     }
 
+    const reviews = [
+        {
+            name: 'Jonny Thomas',
+            job_title: 'Project Manager',
+            review: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+            picture: 'customer_1'
+        },
+        {
+            name: 'Mike Oxlong',
+            job_title: 'Teacher',
+            review: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+            picture: 'customer_1'
+        }
+    ];
+
     const Review = (props: ReviewProps) => {
         const { review, name, job_title, picture } = props;
 
         const handlePrev = () => {
+            if (activeReview == 0) {
+                setActiveReview(reviews.length-1);
+                return;
+            }
             setActiveReview(activeReview-1);
         }
 
         const handleNext = () => {
+            if (activeReview == reviews.length-1) {
+                setActiveReview(0);
+                return;
+            }
             setActiveReview(activeReview+1);
         }
 
@@ -42,7 +65,7 @@ const Reviews = () => {
 
                 <button
                     className="review__btn right"
-                    onClick={handlePrev}
+                    onClick={handleNext}
                 >
                     <img
                         src="/images/icons/arrow.png"
@@ -121,10 +144,10 @@ const Reviews = () => {
 
                 <div className="review__grid">
                     <Review
-                        review="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took."
-                        name='Jonny Thomas'
-                        job_title='Project Manager'
-                        picture='customer_1'
+                        review={reviews[activeReview].review}
+                        name={reviews[activeReview].name}
+                        picture={reviews[activeReview].picture}
+                        job_title={reviews[activeReview].job_title}
                     />
                 </div>
             </div>
